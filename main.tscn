@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://hy4by2eao2ig" path="res://ans_manager.gd" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://c8g02df48lkgq" path="res://answer/cup_kc.tscn" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://b7w7bcrrnpdmi" path="res://answer/tien.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://bumehhkumudq7" path="res://Meo.tscn" id="9_kek77"]
 
 [node name="main" type="Node2D" unique_id=799908308]
 
@@ -26,7 +27,7 @@ position = Vector2(576, 191.99997)
 
 [node name="AnsManager" parent="." unique_id=1174903163 node_paths=PackedStringArray("Slots") instance=ExtResource("5_272bh")]
 script = ExtResource("6_5vw27")
-Ans = Array[PackedScene]([ExtResource("3_h2yge"), ExtResource("7_kek77"), ExtResource("8_5vw27"), ExtResource("3_h2yge"), ExtResource("3_h2yge")])
+Ans = Array[PackedScene]([ExtResource("8_5vw27"), ExtResource("3_h2yge"), ExtResource("7_kek77"), ExtResource("9_kek77"), ExtResource("3_h2yge")])
 Slots = [NodePath("Slot5"), NodePath("Slot6"), NodePath("Slot7"), NodePath("Slot8")]
 
 [node name="Slot5" type="Marker2D" parent="AnsManager" unique_id=667295895]
