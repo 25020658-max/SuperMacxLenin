@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c8g02df48lkgq" path="res://answer/cup_kc.tscn" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://b7w7bcrrnpdmi" path="res://answer/tien.tscn" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bumehhkumudq7" path="res://Meo.tscn" id="9_kek77"]
+[ext_resource type="Texture2D" uid="uid://d27adlj30bptv" path="res://ASSET/frames.png" id="10_4c57u"]
 
 [node name="main" type="Node2D" unique_id=799908308]
 
@@ -23,7 +24,27 @@ scale = Vector2(0.6, 0.25833338)
 texture = ExtResource("2_h2yge")
 
 [node name="Display_scene" parent="." unique_id=795143602 instance=ExtResource("4_1bvp3")]
-position = Vector2(576, 191.99997)
+position = Vector2(614, 193)
+
+[node name="sl1" type="Sprite2D" parent="." unique_id=751592704]
+position = Vector2(436, 520)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("10_4c57u")
+
+[node name="sl2" type="Sprite2D" parent="." unique_id=745854758]
+position = Vector2(179, 520)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("10_4c57u")
+
+[node name="sl3" type="Sprite2D" parent="." unique_id=1884099584]
+position = Vector2(704, 520)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("10_4c57u")
+
+[node name="sl4" type="Sprite2D" parent="." unique_id=317675955]
+position = Vector2(977, 520)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("10_4c57u")
 
 [node name="AnsManager" parent="." unique_id=1174903163 node_paths=PackedStringArray("Slots") instance=ExtResource("5_272bh")]
 script = ExtResource("6_5vw27")
@@ -31,15 +52,15 @@ Ans = Array[PackedScene]([ExtResource("8_5vw27"), ExtResource("3_h2yge"), ExtRes
 Slots = [NodePath("Slot5"), NodePath("Slot6"), NodePath("Slot7"), NodePath("Slot8")]
 
 [node name="Slot5" type="Marker2D" parent="AnsManager" unique_id=667295895]
-position = Vector2(160, 524)
+position = Vector2(179, 510)
 
 [node name="Slot6" type="Marker2D" parent="AnsManager" unique_id=1150557358]
-position = Vector2(426, 530)
+position = Vector2(436, 510)
 
 [node name="Slot7" type="Marker2D" parent="AnsManager" unique_id=1213555104]
-position = Vector2(678, 528)
+position = Vector2(704, 510)
 
 [node name="Slot8" type="Marker2D" parent="AnsManager" unique_id=315344295]
-position = Vector2(942, 528)
+position = Vector2(977, 510)
 
 [connection signal="destroyed" from="Display_scene" to="AnsManager" method="_on_display_scene_destroyed"]
