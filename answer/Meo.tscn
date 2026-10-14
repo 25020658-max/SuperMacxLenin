@@ -6,7 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
 size = Vector2(187, 162.5)
 
-[node name="Answer" unique_id=162211223 instance=ExtResource("1_dracw")]
+[node name="Meo" unique_id=162211223 instance=ExtResource("1_dracw")]
+ans_name = "Meo"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(5.0000153, -1.9999924)
