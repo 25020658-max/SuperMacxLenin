@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bybji3qdnkjyj"]
+
+[ext_resource type="Texture2D" uid="uid://cjdbp4anm1gi3" path="res://ASSET/greenscreen.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://c07nnbo1e0wc2" path="res://ASSET/bluescreen.png" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dxy78v88bntg" path="res://answer/con_nguoi.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://c3gib010n5r4v" path="res://display_scene.tscn" id="4_1bvp3"]
+
+[node name="main" type="Node2D" unique_id=799908308]
+
+[node name="Background1" type="Sprite2D" parent="." unique_id=1428319077]
+position = Vector2(576, 324)
+scale = Vector2(1.28, 1.08)
+texture = ExtResource("1_0xm2m")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=520017257]
+position = Vector2(576, 507.49997)
+scale = Vector2(0.6, 0.25833338)
+texture = ExtResource("2_h2yge")
+
+[node name="Display_scene" parent="." unique_id=795143602 instance=ExtResource("4_1bvp3")]
+position = Vector2(576, 191.99997)
+
+[node name="Answer" parent="." unique_id=162211223 instance=ExtResource("3_h2yge")]
+position = Vector2(104, 528)

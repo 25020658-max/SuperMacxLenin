@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dxy78v88bntg"]
+
+[ext_resource type="PackedScene" uid="uid://bwfu7w1r2wss4" path="res://answer.tscn" id="1_wx85w"]
+[ext_resource type="Script" uid="uid://b7lcigujkwsvt" path="res://answer/con_nguoi.gd" id="2_8w0x3"]
+[ext_resource type="Texture2D" uid="uid://ja5qx8fckhfy" path="res://ASSET/a48c42843fe691dfe568d9f39cf6cc79.jpg" id="3_y54ru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7tsf"]
+size = Vector2(128, 192)
+
+[node name="Answer" unique_id=162211223 instance=ExtResource("1_wx85w")]
+script = ExtResource("2_8w0x3")
+
+[node name="Sprite2D" parent="." index="0" unique_id=1690500587]
+position = Vector2(3.8146973e-06, -3.33786e-06)
+scale = Vector2(0.17391303, 0.18550727)
+texture = ExtResource("3_y54ru")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
+shape = SubResource("RectangleShape2D_v7tsf")
+
+[node name="Button" parent="." index="2" unique_id=1506434918]
+offset_left = -64.0
+offset_top = -96.0
+offset_right = 64.0
+offset_bottom = 96.0

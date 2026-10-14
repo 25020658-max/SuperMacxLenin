@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c3gib010n5r4v"]
+
+[ext_resource type="Texture2D" uid="uid://cr8taew74o5cj" path="res://ASSET/white-background.png" id="1_j1xq7"]
+[ext_resource type="Script" uid="uid://da76wceeow63" path="res://display_scene.gd" id="1_j5nhf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fx75k"]
+size = Vector2(640, 336)
+
+[node name="Display_scene" type="Area2D" unique_id=795143602]
+script = ExtResource("1_j5nhf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1764750882]
+position = Vector2(2.861023e-05, -4.386902e-05)
+scale = Vector2(0.33333334, 0.31111103)
+texture = ExtResource("1_j1xq7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=994965462]
+shape = SubResource("RectangleShape2D_fx75k")
