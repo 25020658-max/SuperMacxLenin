@@ -5,14 +5,22 @@
 [ext_resource type="Texture2D" uid="uid://b2aoekqkqe402" path="res://ASSET/tien.png" id="3_ijlj8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrfx5"]
-size = Vector2(411, 344)
+size = Vector2(184, 210)
 
-[node name="Answer" unique_id=162211223 instance=ExtResource("1_h3xi8")]
+[node name="Tien" unique_id=162211223 instance=ExtResource("1_h3xi8")]
 script = ExtResource("2_pgnc4")
+ans_name = "Tien"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
+scale = Vector2(0.5695793, 0.5940594)
 texture = ExtResource("3_ijlj8")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
 position = Vector2(4, -1)
 shape = SubResource("RectangleShape2D_vrfx5")
+
+[node name="Button" parent="." index="2" unique_id=1506434918]
+offset_left = -88.0
+offset_top = -96.0
+offset_right = 88.0
+offset_bottom = 96.0

@@ -15,8 +15,9 @@ size = Vector2(128, 192)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vprut"]
 
-[node name="Answer" unique_id=162211223 instance=ExtResource("1_wx85w")]
+[node name="ConNguoi" unique_id=162211223 instance=ExtResource("1_wx85w")]
 script = ExtResource("2_8w0x3")
+ans_name = "con nguoi"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(3.8146973e-06, -3.33786e-06)
@@ -35,3 +36,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_v7tsf")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_8c033")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_x15tu")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vprut")
+
+[node name="Label" parent="." index="3" unique_id=1724316594]
+offset_left = -64.0
+offset_right = 64.0
