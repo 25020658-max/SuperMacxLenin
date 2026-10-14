@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdgu7fph014p"
-path="res://.godot/imported/Minecraft-Cat-Eating-Fish-From-Player-PNG-thumb.webp-13aa7fd0907a99d21772b206bd133aa4.ctex"
+uid="uid://bdjdvv8ej78hk"
+path="res://.godot/imported/tu_nhien.png-45d964a750a02b8e809024bbef55a777.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSET/Minecraft-Cat-Eating-Fish-From-Player-PNG-thumb.webp"
-dest_files=["res://.godot/imported/Minecraft-Cat-Eating-Fish-From-Player-PNG-thumb.webp-13aa7fd0907a99d21772b206bd133aa4.ctex"]
+source_file="res://ASSET/tu_nhien.png"
+dest_files=["res://.godot/imported/tu_nhien.png-45d964a750a02b8e809024bbef55a777.ctex"]
 
 [params]
 

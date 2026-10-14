@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4vvp8v6u427x"
-path="res://.godot/imported/38-388541_minecraft-diamonds-png-transparent-png.png-2cc05910ce00ae5364a3775fce9d798b.ctex"
+uid="uid://dmj35r487j5f"
+path="res://.godot/imported/cat1.png-080b88a86dd3fcf979e7a23bc3f5abd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSET/38-388541_minecraft-diamonds-png-transparent-png.png"
-dest_files=["res://.godot/imported/38-388541_minecraft-diamonds-png-transparent-png.png-2cc05910ce00ae5364a3775fce9d798b.ctex"]
+source_file="res://ASSET/cat1.png"
+dest_files=["res://.godot/imported/cat1.png-080b88a86dd3fcf979e7a23bc3f5abd7.ctex"]
 
 [params]
 

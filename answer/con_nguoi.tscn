@@ -2,10 +2,18 @@
 
 [ext_resource type="PackedScene" uid="uid://bwfu7w1r2wss4" path="res://answer.tscn" id="1_wx85w"]
 [ext_resource type="Script" uid="uid://b7lcigujkwsvt" path="res://answer/con_nguoi.gd" id="2_8w0x3"]
-[ext_resource type="Texture2D" uid="uid://ja5qx8fckhfy" path="res://ASSET/a48c42843fe691dfe568d9f39cf6cc79.jpg" id="3_y54ru"]
+[ext_resource type="Texture2D" uid="uid://chcda6fy67tdk" path="res://ASSET/danlang.png" id="3_acyg1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7tsf"]
 size = Vector2(128, 192)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7tsf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8c033"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x15tu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vprut"]
 
 [node name="Answer" unique_id=162211223 instance=ExtResource("1_wx85w")]
 script = ExtResource("2_8w0x3")
@@ -13,7 +21,7 @@ script = ExtResource("2_8w0x3")
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(3.8146973e-06, -3.33786e-06)
 scale = Vector2(0.17391303, 0.18550727)
-texture = ExtResource("3_y54ru")
+texture = ExtResource("3_acyg1")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
 shape = SubResource("RectangleShape2D_v7tsf")
@@ -23,3 +31,7 @@ offset_left = -64.0
 offset_top = -96.0
 offset_right = 64.0
 offset_bottom = 96.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v7tsf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8c033")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x15tu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vprut")

@@ -6,6 +6,8 @@ class_name Answer
 var is_grabbing = false
 var offset = Vector2.ZERO
 
+signal destroyed
+
 func _process(delta: float) -> void:
 	if is_grabbing:
 		position = get_global_mouse_position() - offset

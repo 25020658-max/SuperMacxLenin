@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lcj2njb1vvls"
-path="res://.godot/imported/cacemthongcam.jpeg-9a60acbecd881a5b6decc02ec6be7d94.ctex"
+uid="uid://chcda6fy67tdk"
+path="res://.godot/imported/danlang.png-b36e6f1a13b3ba0459f62b5bebe8214a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSET/cacemthongcam.jpeg"
-dest_files=["res://.godot/imported/cacemthongcam.jpeg-9a60acbecd881a5b6decc02ec6be7d94.ctex"]
+source_file="res://ASSET/danlang.png"
+dest_files=["res://.godot/imported/danlang.png-b36e6f1a13b3ba0459f62b5bebe8214a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpc8srrpuw0la"
-path="res://.godot/imported/MXH.jpg-ebcd725969ac5b2f606297025281410f.ctex"
+uid="uid://d044whtld8m27"
+path="res://.godot/imported/cetk.png-e269664f6be1d70f92e9402c4cd31141.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSET/MXH.jpg"
-dest_files=["res://.godot/imported/MXH.jpg-ebcd725969ac5b2f606297025281410f.ctex"]
+source_file="res://ASSET/cetk.png"
+dest_files=["res://.godot/imported/cetk.png-e269664f6be1d70f92e9402c4cd31141.ctex"]
 
 [params]
 

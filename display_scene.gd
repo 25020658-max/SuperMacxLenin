@@ -1,5 +1,6 @@
 extends Area2D
 
+signal destroyed(ans_arg: Answer)
 func _ready() -> void:
 	pass
 func _process(delta: float) -> void:
@@ -7,3 +8,4 @@ func _process(delta: float) -> void:
 		if area.is_in_group("answer") and area.has_method("get_is_grabbing"):
 			if not area.get_is_grabbing():
 				area.hide()
+				destroyed.emit(area)

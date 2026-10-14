@@ -2,6 +2,14 @@
 
 [ext_resource type="Script" uid="uid://ba7xub0adkoya" path="res://answer.gd" id="1_v7tsf"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acyg1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glvn1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0c6n6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p6am5"]
+
 [node name="Answer" type="Area2D" unique_id=162211223 groups=["answer"]]
 script = ExtResource("1_v7tsf")
 
@@ -14,6 +22,10 @@ offset_left = -128.0
 offset_top = -128.0
 offset_right = 128.0
 offset_bottom = 128.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_acyg1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_glvn1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0c6n6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p6am5")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
