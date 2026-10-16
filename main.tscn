@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bybji3qdnkjyj"]
 
-[ext_resource type="Texture2D" uid="uid://cjdbp4anm1gi3" path="res://ASSET/greenscreen.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://brkllso2ldppi" path="res://ASSET/black2.jpg" id="1_4c57u"]
 [ext_resource type="Texture2D" uid="uid://c07nnbo1e0wc2" path="res://ASSET/bluescreen.png" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dxy78v88bntg" path="res://answer/con_nguoi.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://c3gib010n5r4v" path="res://display_scene.tscn" id="4_1bvp3"]
@@ -14,35 +14,36 @@
 [node name="main" type="Node2D" unique_id=799908308]
 
 [node name="Background1" type="Sprite2D" parent="." unique_id=1428319077]
-position = Vector2(576, 324)
-scale = Vector2(1.28, 1.08)
-texture = ExtResource("1_0xm2m")
+position = Vector2(625, 393.00003)
+scale = Vector2(2.0061412, 1.5680071)
+texture = ExtResource("1_4c57u")
 
 [node name="Background2" type="Sprite2D" parent="." unique_id=520017257]
+visible = false
 position = Vector2(576, 507.49997)
 scale = Vector2(0.6, 0.25833338)
 texture = ExtResource("2_h2yge")
 
 [node name="Display_scene" parent="." unique_id=795143602 instance=ExtResource("4_1bvp3")]
-position = Vector2(614, 193)
+position = Vector2(603, 175)
 
 [node name="sl1" type="Sprite2D" parent="." unique_id=751592704]
-position = Vector2(436, 520)
+position = Vector2(436, 490)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("10_4c57u")
 
 [node name="sl2" type="Sprite2D" parent="." unique_id=745854758]
-position = Vector2(179, 520)
+position = Vector2(179, 460)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("10_4c57u")
 
 [node name="sl3" type="Sprite2D" parent="." unique_id=1884099584]
-position = Vector2(704, 520)
+position = Vector2(704, 490)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("10_4c57u")
 
 [node name="sl4" type="Sprite2D" parent="." unique_id=317675955]
-position = Vector2(977, 520)
+position = Vector2(977, 460)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("10_4c57u")
 
@@ -52,15 +53,15 @@ Ans = Array[PackedScene]([ExtResource("8_5vw27"), ExtResource("3_h2yge"), ExtRes
 Slots = [NodePath("Slot5"), NodePath("Slot6"), NodePath("Slot7"), NodePath("Slot8")]
 
 [node name="Slot5" type="Marker2D" parent="AnsManager" unique_id=667295895]
-position = Vector2(179, 510)
+position = Vector2(179, 460)
 
 [node name="Slot6" type="Marker2D" parent="AnsManager" unique_id=1150557358]
-position = Vector2(436, 510)
+position = Vector2(436, 490)
 
 [node name="Slot7" type="Marker2D" parent="AnsManager" unique_id=1213555104]
-position = Vector2(704, 510)
+position = Vector2(704, 490)
 
 [node name="Slot8" type="Marker2D" parent="AnsManager" unique_id=315344295]
-position = Vector2(977, 510)
+position = Vector2(977, 460)
 
 [connection signal="destroy_answer" from="Display_scene" to="AnsManager" method="_on_display_scene_destroy_answer"]

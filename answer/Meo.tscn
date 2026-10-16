@@ -4,22 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://cmx5yfskqhp51" path="res://ASSET/cat2.png" id="2_bt7kj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
-size = Vector2(187, 162.5)
+size = Vector2(82.5, 80.25)
 
 [node name="Meo" unique_id=162211223 instance=ExtResource("1_dracw")]
 ans_name = "Meo"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(5.0000153, -1.9999924)
-scale = Vector2(0.36666667, 0.42)
+scale = Vector2(0.18, 0.206)
 texture = ExtResource("2_bt7kj")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
-position = Vector2(-3, -5)
+position = Vector2(6, -4)
 shape = SubResource("RectangleShape2D_5vw27")
 
 [node name="Button" parent="." index="2" unique_id=1506434918]
-offset_left = -52.0
-offset_top = -62.0
-offset_right = 61.0
-offset_bottom = 47.0
+offset_left = -33.0
+offset_top = -47.0
+offset_right = 45.0
+offset_bottom = 34.0
