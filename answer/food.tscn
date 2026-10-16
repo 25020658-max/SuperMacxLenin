@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b0h5bo51qneqy"]
+
+[ext_resource type="PackedScene" uid="uid://bwfu7w1r2wss4" path="res://answer.tscn" id="1_qh0ke"]
+[ext_resource type="Texture2D" uid="uid://cnxm87aqydcjd" path="res://ASSET/food.png" id="2_seml7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tq8uu"]
+size = Vector2(1905.5557, 1950)
+
+[node name="Answer" unique_id=162211223 instance=ExtResource("1_qh0ke")]
+scale = Vector2(0.18, 0.18)
+ans_name = "        Thức ăn"
+
+[node name="Sprite2D" parent="." index="0" unique_id=1690500587]
+texture = ExtResource("2_seml7")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
+position = Vector2(5.4999986, 11.500004)
+scale = Vector2(0.18, 0.18)
+shape = SubResource("RectangleShape2D_tq8uu")
+
+[node name="Button" parent="." index="2" unique_id=1506434918]
+offset_left = -152.0
+offset_top = -145.0
+offset_right = 160.0
+offset_bottom = 168.0
+
+[node name="Label" parent="." index="3" unique_id=1724316594]
+offset_left = -161.11108
+offset_top = 188.88887
+offset_right = 177.7779
+offset_bottom = 316.6667

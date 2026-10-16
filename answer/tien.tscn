@@ -9,7 +9,7 @@ size = Vector2(63, 76.25)
 
 [node name="Tien" unique_id=162211223 instance=ExtResource("1_h3xi8")]
 script = ExtResource("2_pgnc4")
-ans_name = "Tien"
+ans_name = "Tiền tệ"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 scale = Vector2(0.18, 0.188)

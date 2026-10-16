@@ -6,10 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://c3gib010n5r4v" path="res://display_scene.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://d26uj2quw303n" path="res://ans_manager.tscn" id="5_272bh"]
 [ext_resource type="Script" uid="uid://hy4by2eao2ig" path="res://ans_manager.gd" id="6_5vw27"]
+[ext_resource type="PackedScene" uid="uid://6qoim3h54s0s" path="res://answer/dktn.tscn" id="7_efxa6"]
 [ext_resource type="PackedScene" uid="uid://c8g02df48lkgq" path="res://answer/cup_kc.tscn" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://b7w7bcrrnpdmi" path="res://answer/tien.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://b0h5bo51qneqy" path="res://answer/food.tscn" id="8_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bumehhkumudq7" path="res://answer/Meo.tscn" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://d27adlj30bptv" path="res://ASSET/frames.png" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://c3uqa6puv68nl" path="res://answer/mxh.tscn" id="10_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://f6et307hmii0" path="res://answer/cetc.tscn" id="11_ycdy4"]
 
 [node name="main" type="Node2D" unique_id=799908308]
 
@@ -49,7 +53,7 @@ texture = ExtResource("10_4c57u")
 
 [node name="AnsManager" parent="." unique_id=1174903163 node_paths=PackedStringArray("Slots") instance=ExtResource("5_272bh")]
 script = ExtResource("6_5vw27")
-Ans = Array[PackedScene]([ExtResource("8_5vw27"), ExtResource("3_h2yge"), ExtResource("7_kek77"), ExtResource("9_kek77"), ExtResource("3_h2yge"), ExtResource("8_5vw27"), ExtResource("9_kek77"), ExtResource("8_5vw27")])
+Ans = Array[PackedScene]([ExtResource("7_efxa6"), ExtResource("8_dg77c"), ExtResource("3_h2yge"), ExtResource("10_ycdy4"), ExtResource("8_5vw27"), ExtResource("9_kek77"), ExtResource("7_kek77"), ExtResource("11_ycdy4")])
 Slots = [NodePath("Slot5"), NodePath("Slot6"), NodePath("Slot7"), NodePath("Slot8")]
 
 [node name="Slot5" type="Marker2D" parent="AnsManager" unique_id=667295895]
