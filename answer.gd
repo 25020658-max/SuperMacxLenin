@@ -12,6 +12,9 @@ var is_hiding :bool = false
 func _ready() -> void:
 	if ans_name != null: 
 		$Label.text = ans_name
+		print (ans_name)
+	else:
+		print ("cac")
 
 func _process(delta: float) -> void:
 	if is_grabbing:
@@ -42,7 +45,6 @@ func ans_hide():
 		hide()
 		if ans_name != null:
 			answer_hide.emit(ans_name)
-			print(ans_name)
 		is_hiding = true
 	
 	

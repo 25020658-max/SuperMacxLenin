@@ -4,16 +4,28 @@
 [ext_resource type="Texture2D" uid="uid://bwdiwjws4c0l0" path="res://ASSET/ig.png" id="2_e8s17"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kmqrm"]
-size = Vector2(327.22223, 287.77774)
+size = Vector2(127.999985, 127.999985)
 
 [node name="Answer" unique_id=162211223 instance=ExtResource("1_lra0n")]
-scale = Vector2(0.18, 0.18)
-ans_name = "Mạng xã "
+ans_name = "MXH"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
+scale = Vector2(0.36467236, 0.36467236)
 texture = ExtResource("2_e8s17")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1931231832]
-position = Vector2(-8.055575, 0)
+position = Vector2(-1.9073486e-06, 0)
 scale = Vector2(1.0000001, 1.0000001)
 shape = SubResource("RectangleShape2D_kmqrm")
+
+[node name="Button" parent="." index="2" unique_id=1506434918]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="Label" parent="." index="3" unique_id=1724316594]
+offset_left = -88.0
+offset_top = 104.0
+offset_right = 88.0
+offset_bottom = 127.0

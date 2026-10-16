@@ -24,5 +24,7 @@ offset_right = 33.0
 offset_bottom = 37.0
 
 [node name="Label" parent="." index="3" unique_id=1724316594]
+offset_left = -73.0
 offset_top = 100.0
-offset_bottom = 123.0
+offset_right = 72.0
+offset_bottom = 128.0

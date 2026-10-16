@@ -17,12 +17,10 @@ func _spawning(loca: int) -> void:
 	dap.global_position = Slots[loca].global_position
 	var temp = dap.get_ans_name()
 	answering[loca] = temp
-	
-	add_child(dap)
+	call_deferred("add_child", dap)
 	
 func _on_display_scene_destroy_answer(ans: Answer) -> void:
 	var loca: int = answering.find(ans.get_ans_name())
-	print(loca)
 	if loca == -1:
 		return
 	_spawning(loca)

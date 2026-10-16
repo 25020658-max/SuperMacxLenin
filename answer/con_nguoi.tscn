@@ -17,7 +17,7 @@ size = Vector2(128, 192)
 
 [node name="ConNguoi" unique_id=162211223 instance=ExtResource("1_wx85w")]
 script = ExtResource("2_8w0x3")
-ans_name = "        Dân cư"
+ans_name = "Dân cư"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(3.8146973e-06, -3.33786e-06)
