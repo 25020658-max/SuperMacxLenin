@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cdw5yvjba5hgp"]
+
+[ext_resource type="Script" uid="uid://cnt8fniqx7nl4" path="res://displaying.gd" id="1_1qwog"]
+[ext_resource type="Texture2D" uid="uid://dg7gf24jpg8v4" path="res://ASSET/SCENE0.png" id="2_1kyps"]
+[ext_resource type="Texture2D" uid="uid://cyfcg3e6pdvb7" path="res://ASSET/SCENE2.png" id="3_ioybg"]
+[ext_resource type="Texture2D" uid="uid://bpc6yaost375r" path="res://ASSET/SCENE1.png" id="4_jm56k"]
+[ext_resource type="Texture2D" uid="uid://clhne6luqmvlr" path="res://ASSET/SCENE12.png" id="5_d1iuc"]
+[ext_resource type="Texture2D" uid="uid://n2dm8cdh423k" path="res://ASSET/SCENESPECIAL.png" id="6_y6wfc"]
+
+[node name="Displaying" type="Node2D" unique_id=617560786 node_paths=PackedStringArray("Diss")]
+script = ExtResource("1_1qwog")
+Diss = [NodePath("Empty"), NodePath("Dancu"), NodePath("Tunhien"), NodePath("DandT"), null]
+
+[node name="Empty" type="Sprite2D" parent="." unique_id=519461931]
+texture = ExtResource("2_1kyps")
+
+[node name="Dancu" type="Sprite2D" parent="." unique_id=1527160070]
+texture = ExtResource("3_ioybg")
+
+[node name="Tunhien" type="Sprite2D" parent="." unique_id=2098964807]
+texture = ExtResource("4_jm56k")
+
+[node name="DandT" type="Sprite2D" parent="." unique_id=2057353925]
+texture = ExtResource("5_d1iuc")
+
+[node name="Special" type="Sprite2D" parent="." unique_id=1588458807]
+texture = ExtResource("6_y6wfc")

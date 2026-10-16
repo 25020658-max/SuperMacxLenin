@@ -2,6 +2,54 @@
 
 [ext_resource type="Texture2D" uid="uid://cr8taew74o5cj" path="res://ASSET/white-background.png" id="1_j1xq7"]
 [ext_resource type="Script" uid="uid://da76wceeow63" path="res://display_scene.gd" id="1_j5nhf"]
+[ext_resource type="Texture2D" uid="uid://dg7gf24jpg8v4" path="res://ASSET/SCENE0.png" id="3_l2r3q"]
+[ext_resource type="Texture2D" uid="uid://cyfcg3e6pdvb7" path="res://ASSET/SCENE2.png" id="4_r7jb3"]
+[ext_resource type="Texture2D" uid="uid://n2dm8cdh423k" path="res://ASSET/SCENESPECIAL.png" id="5_v3hmu"]
+[ext_resource type="Texture2D" uid="uid://bpc6yaost375r" path="res://ASSET/SCENE1.png" id="6_cuyc8"]
+[ext_resource type="Texture2D" uid="uid://clhne6luqmvlr" path="res://ASSET/SCENE12.png" id="7_au2p8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1sg6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l2r3q")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_r7jb3")
+}],
+"loop": 1,
+"name": &"human",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_v3hmu")
+}],
+"loop": 1,
+"name": &"meo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_cuyc8")
+}],
+"loop": 1,
+"name": &"nature",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_au2p8")
+}],
+"loop": 1,
+"name": &"nh",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx75k"]
 size = Vector2(640, 336)
@@ -9,9 +57,15 @@ size = Vector2(640, 336)
 [node name="Display_scene" type="Area2D" unique_id=795143602]
 script = ExtResource("1_j5nhf")
 
+[node name="Diss" type="AnimatedSprite2D" parent="." unique_id=1534402394]
+scale = Vector2(0.314151, 0.31415093)
+sprite_frames = SubResource("SpriteFrames_q1sg6")
+animation = &"meo"
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1764750882]
-position = Vector2(2.861023e-05, -4.386902e-05)
-scale = Vector2(0.33333334, 0.31111103)
+visible = false
+position = Vector2(15.500009, -4.386902e-05)
+scale = Vector2(0.31718752, 0.31111103)
 texture = ExtResource("1_j1xq7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=994965462]

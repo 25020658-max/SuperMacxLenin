@@ -38,6 +38,9 @@ func get_is_grabbing():
 func get_ans_name():
 	if ans_name != null:
 		return ans_name
+func get_ans_text():
+	if ans_text != null:
+		return ans_text
 func ans_hide():
 	if is_hiding:
 		pass

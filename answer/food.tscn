@@ -8,6 +8,7 @@ size = Vector2(711.11115, 711.11115)
 
 [node name="food" unique_id=162211223 instance=ExtResource("1_qh0ke")]
 ans_name = "Thức ăn"
+ans_text = "2"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 scale = Vector2(0.31111112, 0.31111112)

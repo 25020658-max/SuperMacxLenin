@@ -10,6 +10,7 @@ size = Vector2(94.5, 87.8125)
 [node name="CupKC" unique_id=162211223 instance=ExtResource("1_cd3lg")]
 script = ExtResource("2_a24ff")
 ans_name = "Phương thức Sản xuất"
+ans_text = "7"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 position = Vector2(-3, -3.000001)

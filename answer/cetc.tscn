@@ -8,6 +8,7 @@ size = Vector2(68, 56)
 
 [node name="Answer" unique_id=162211223 instance=ExtResource("1_mk5hc")]
 ans_name = "Học Bổng"
+ans_text = "8"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1690500587]
 scale = Vector2(0.18, 0.18)
