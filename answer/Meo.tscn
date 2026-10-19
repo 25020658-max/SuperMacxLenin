@@ -6,6 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
 size = Vector2(82.5, 80.25)
 
+[sub_resource type="LabelSettings" id="LabelSettings_0xry8"]
+
 [node name="Meo" unique_id=162211223 instance=ExtResource("1_dracw")]
 ans_name = "Mèo"
 ans_text = "6"
@@ -26,7 +28,16 @@ offset_right = 45.0
 offset_bottom = 34.0
 
 [node name="Label" parent="." index="3" unique_id=1724316594]
-offset_left = -64.0
-offset_top = 88.0
-offset_right = 64.0
-offset_bottom = 111.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = 110.0
+offset_right = 65.0
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+label_settings = SubResource("LabelSettings_0xry8")

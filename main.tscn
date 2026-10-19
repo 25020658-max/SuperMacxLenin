@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bybji3qdnkjyj"]
 
 [ext_resource type="Texture2D" uid="uid://brkllso2ldppi" path="res://ASSET/black2.jpg" id="1_4c57u"]
-[ext_resource type="Texture2D" uid="uid://c07nnbo1e0wc2" path="res://ASSET/bluescreen.png" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dxy78v88bntg" path="res://answer/con_nguoi.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://c3gib010n5r4v" path="res://display_scene.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://d26uj2quw303n" path="res://ans_manager.tscn" id="5_272bh"]
@@ -22,14 +21,8 @@ position = Vector2(625, 393.00003)
 scale = Vector2(2.0061412, 1.5680071)
 texture = ExtResource("1_4c57u")
 
-[node name="Background2" type="Sprite2D" parent="." unique_id=520017257]
-visible = false
-position = Vector2(576, 507.49997)
-scale = Vector2(0.6, 0.25833338)
-texture = ExtResource("2_h2yge")
-
 [node name="Display_scene" parent="." unique_id=795143602 instance=ExtResource("4_1bvp3")]
-position = Vector2(603, 175)
+position = Vector2(570, 171)
 
 [node name="sl1" type="Sprite2D" parent="." unique_id=751592704]
 position = Vector2(436, 490)

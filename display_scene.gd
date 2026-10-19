@@ -2,6 +2,8 @@ extends Area2D
 
 signal destroy_answer(ans: Answer)
 var ans_array : Array[String] = []
+@onready var lab = $Twxt
+@onready var controler = $Control
 func _ready() -> void:
 	$Diss.play("default")
 	pass
@@ -18,6 +20,7 @@ func _on_area_entered(area: Area2D) -> void:
 			var tem2 = area.get_ans_text();
 			ans_array.append(tem2)
 			rendering()
+			false_ans(tem2)
 func rendering() ->void:
 	if ans_array.has("1") && !ans_array.has("3"):
 		$Diss.play("nature")
@@ -27,6 +30,27 @@ func rendering() ->void:
 		$Diss.play("nh")
 	if ans_array.has("3") && ans_array.has("1") && ans_array.has("6"):
 		$Diss.play("meo")
-	
+func false_ans(s: String) -> void:
+	if s == "3" or s == "1":
+		lab.text = "Chính xác!"
+		controler.show_temporary_text(lab, 4)
+	if (s=="2"):
+		lab.text = "Nhóm 9 chúng tôi đã ăn hết chỗ thức ăn, đây không phải đáp án đúng!"
+		controler.show_temporary_text(lab, 4)
+	if (s=="4"):
+		lab.text = "Lướt mạng xã hội 181 phút không giúp xã hội phát triển lắm."
+		controler.show_temporary_text(lab, 4)
+	if (s=="5"):
+		lab.text = "Anh K đã dùng hết số tiền vào tài xỉu, Đây không phải đáp án đúng!"
+		controler.show_temporary_text(lab, 4)
+	if (s=="6"):
+		lab.text = "Mấy con mèo không giúp tạo ra xã hội, nhưng chúng được phép ở lại."
+		controler.show_temporary_text(lab, 4)
+	if (s=="8"):
+		lab.text = "Đáp án chưa chính xác rồi, các em thông cảm"
+		controler.show_temporary_text(lab, 4)
+		
+		
+
 	
 	

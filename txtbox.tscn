@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://chy842icobb3m"]
+
+[ext_resource type="Script" uid="uid://btfdiyvguk7oa" path="res://txtbox.gd" id="1_o2wj1"]
+[ext_resource type="Script" uid="uid://vb1dnnt3jqh5" path="res://control.gd" id="2_6yjug"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6yjug"]
+
+[node name="Txtbox" type="CanvasLayer" unique_id=1187705544]
+script = ExtResource("1_o2wj1")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=744037520]
+anchors_preset = -1
+anchor_left = 0.42400002
+anchor_top = 0.41900003
+anchor_right = 0.42400002
+anchor_bottom = 0.41900003
+offset_left = -258.67206
+offset_top = -27.268036
+offset_right = 372.32794
+offset_bottom = 74.731964
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1958184925]
+custom_maximum_size = Vector2(0, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer" unique_id=1237615375]
+custom_minimum_size = Vector2(1, 1)
+custom_maximum_size = Vector2(1, 1)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_6yjug")
+autowrap_mode = 3
+
+[node name="Control" type="Control" parent="PanelContainer/MarginContainer" unique_id=303460163]
+layout_mode = 2
+script = ExtResource("2_6yjug")

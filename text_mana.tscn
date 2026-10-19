@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://mlfbnntllmjp"]
+
+[ext_resource type="Script" uid="uid://c1icfgt6lql4o" path="res://TextMana.gd" id="1_0xry8"]
+
+[node name="TextMana" type="Node2D" unique_id=1798364953]
+script = ExtResource("1_0xry8")
