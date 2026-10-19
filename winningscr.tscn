@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dfpocl22rauni"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=2088599195]

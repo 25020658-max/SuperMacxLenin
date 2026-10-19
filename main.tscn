@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bybji3qdnkjyj"]
 
 [ext_resource type="Texture2D" uid="uid://brkllso2ldppi" path="res://ASSET/black2.jpg" id="1_4c57u"]
+[ext_resource type="Script" uid="uid://qd3wh00yqkwk" path="res://main.gd" id="1_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dxy78v88bntg" path="res://answer/con_nguoi.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://c3gib010n5r4v" path="res://display_scene.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://d26uj2quw303n" path="res://ans_manager.tscn" id="5_272bh"]
@@ -13,8 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://d27adlj30bptv" path="res://ASSET/frames.png" id="10_4c57u"]
 [ext_resource type="PackedScene" uid="uid://c3uqa6puv68nl" path="res://answer/mxh.tscn" id="10_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://f6et307hmii0" path="res://answer/cetc.tscn" id="11_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://ch1q3hbkthvjh" path="res://ASSET/wwin.jpg" id="15_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://dfpocl22rauni" path="res://winningscr.tscn" id="16_yaehf"]
+[ext_resource type="AudioStream" uid="uid://b4qeaoks8ylr5" path="res://ASSET/YTSave.to_YouTube_Media_e7zMbX_0e5o_POKEMON-Capture-Sound-Effect-Free-Ringtone-Download_009_vbr.mp3" id="17_yaehf"]
 
 [node name="main" type="Node2D" unique_id=799908308]
+script = ExtResource("1_vivmo")
 
 [node name="Background1" type="Sprite2D" parent="." unique_id=1428319077]
 position = Vector2(625, 393.00003)
@@ -61,4 +66,14 @@ position = Vector2(704, 490)
 [node name="Slot8" type="Marker2D" parent="AnsManager" unique_id=315344295]
 position = Vector2(977, 460)
 
+[node name="wini" type="Sprite2D" parent="." unique_id=650819412]
+position = Vector2(561, 334)
+scale = Vector2(1.4557291, 1.5277778)
+texture = ExtResource("15_2cqfq")
+
+[node name="AudioStreamPlayer2D" parent="." unique_id=2088599195 instance=ExtResource("16_yaehf")]
+stream = ExtResource("17_yaehf")
+volume_db = 2.836
+
 [connection signal="destroy_answer" from="Display_scene" to="AnsManager" method="_on_display_scene_destroy_answer"]
+[connection signal="win" from="Display_scene" to="." method="_on_display_scene_win"]

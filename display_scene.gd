@@ -1,9 +1,10 @@
 extends Area2D
-
+signal win
 signal destroy_answer(ans: Answer)
 var ans_array : Array[String] = []
 @onready var lab = $Twxt
 @onready var controler = $Control
+@export var finall: PackedScene
 func _ready() -> void:
 	$Diss.play("default")
 	pass
@@ -49,8 +50,9 @@ func false_ans(s: String) -> void:
 	if (s=="8"):
 		lab.text = "Đáp án chưa chính xác rồi, các em thông cảm"
 		controler.show_temporary_text(lab, 4)
-		
-		
+	if (s =="7"):
+		win.emit()
+	
 
 	
 	

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cr8taew74o5cj" path="res://ASSET/white-background.png" id="1_j1xq7"]
 [ext_resource type="Script" uid="uid://da76wceeow63" path="res://display_scene.gd" id="1_j5nhf"]
+[ext_resource type="PackedScene" uid="uid://7co8vca3u8ss" path="res://wwin.tscn" id="2_v3hmu"]
 [ext_resource type="Texture2D" uid="uid://dg7gf24jpg8v4" path="res://ASSET/SCENE0.png" id="3_l2r3q"]
 [ext_resource type="Texture2D" uid="uid://cyfcg3e6pdvb7" path="res://ASSET/SCENE2.png" id="4_r7jb3"]
 [ext_resource type="Texture2D" uid="uid://n2dm8cdh423k" path="res://ASSET/SCENESPECIAL.png" id="5_v3hmu"]
@@ -59,6 +60,7 @@ size = Vector2(640, 336)
 
 [node name="Display_scene" type="Area2D" unique_id=795143602]
 script = ExtResource("1_j5nhf")
+finall = ExtResource("2_v3hmu")
 
 [node name="Diss" type="AnimatedSprite2D" parent="." unique_id=1534402394]
 scale = Vector2(0.314151, 0.31415093)
@@ -77,6 +79,7 @@ offset_right = 290.0
 offset_bottom = 141.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_font_sizes/font_size = 16
 label_settings = SubResource("LabelSettings_2yjtk")
 horizontal_alignment = 1
 vertical_alignment = 1

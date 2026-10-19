@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://7co8vca3u8ss"]
+
+[ext_resource type="Texture2D" uid="uid://ch1q3hbkthvjh" path="res://ASSET/wwin.jpg" id="1_x0f4x"]
+[ext_resource type="PackedScene" uid="uid://dfpocl22rauni" path="res://winningscr.tscn" id="2_wal5e"]
+
+[node name="Winning" type="Node2D" unique_id=1710216076]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=345737318]
+position = Vector2(561, 334)
+scale = Vector2(1.4557291, 1.5277778)
+texture = ExtResource("1_x0f4x")
+
+[node name="AudioStreamPlayer2D" parent="." unique_id=2088599195 instance=ExtResource("2_wal5e")]
