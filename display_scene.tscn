@@ -8,7 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://n2dm8cdh423k" path="res://ASSET/SCENESPECIAL.png" id="5_v3hmu"]
 [ext_resource type="Texture2D" uid="uid://bpc6yaost375r" path="res://ASSET/SCENE1.png" id="6_cuyc8"]
 [ext_resource type="Texture2D" uid="uid://clhne6luqmvlr" path="res://ASSET/SCENE12.png" id="7_au2p8"]
+[ext_resource type="FontFile" uid="uid://dg5rsxpfjh58r" path="res://ASSET/VNF-Comic Sans.ttf" id="8_cuyc8"]
 [ext_resource type="Script" uid="uid://vb1dnnt3jqh5" path="res://control.gd" id="8_r7jb3"]
+[ext_resource type="AudioStream" uid="uid://ba7rjj8u6jmb" path="res://ASSET/duolingo-correct.mp3" id="11_chyud"]
+[ext_resource type="AudioStream" uid="uid://s463ie3yadpl" path="res://ASSET/duolingo-wrong.mp3" id="12_12iou"]
+[ext_resource type="AudioStream" uid="uid://cknxr7mlletrf" path="res://ASSET/duolingo-bass.mp3" id="12_jo15j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q1sg6"]
 animations = [{
@@ -54,6 +58,8 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2yjtk"]
+font = ExtResource("8_cuyc8")
+font_size = 32
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx75k"]
 size = Vector2(640, 336)
@@ -79,7 +85,6 @@ offset_right = 290.0
 offset_bottom = 141.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 16
 label_settings = SubResource("LabelSettings_2yjtk")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -97,5 +102,17 @@ shape = SubResource("RectangleShape2D_fx75k")
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("8_r7jb3")
+
+[node name="Correct" type="AudioStreamPlayer2D" parent="." unique_id=1185769455]
+stream = ExtResource("11_chyud")
+volume_db = 15.0
+
+[node name="Wrong" type="AudioStreamPlayer2D" parent="." unique_id=1110110843]
+stream = ExtResource("12_12iou")
+volume_db = 15.0
+
+[node name="Bass" type="AudioStreamPlayer2D" parent="." unique_id=462076828]
+stream = ExtResource("12_jo15j")
+volume_db = -5.821
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

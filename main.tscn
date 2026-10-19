@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://ch1q3hbkthvjh" path="res://ASSET/wwin.jpg" id="15_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://dfpocl22rauni" path="res://winningscr.tscn" id="16_yaehf"]
 [ext_resource type="AudioStream" uid="uid://b4qeaoks8ylr5" path="res://ASSET/YTSave.to_YouTube_Media_e7zMbX_0e5o_POKEMON-Capture-Sound-Effect-Free-Ringtone-Download_009_vbr.mp3" id="17_yaehf"]
+[ext_resource type="AudioStream" uid="uid://bki7o6kjnucnk" path="res://ASSET/01. Overworld Day.mp3" id="18_074og"]
 
 [node name="main" type="Node2D" unique_id=799908308]
 script = ExtResource("1_vivmo")
@@ -74,6 +75,10 @@ texture = ExtResource("15_2cqfq")
 [node name="AudioStreamPlayer2D" parent="." unique_id=2088599195 instance=ExtResource("16_yaehf")]
 stream = ExtResource("17_yaehf")
 volume_db = 2.836
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=2039094200]
+stream = ExtResource("18_074og")
+autoplay = true
 
 [connection signal="destroy_answer" from="Display_scene" to="AnsManager" method="_on_display_scene_destroy_answer"]
 [connection signal="win" from="Display_scene" to="." method="_on_display_scene_win"]

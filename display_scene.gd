@@ -17,8 +17,15 @@ func _on_area_entered(area: Area2D) -> void:
 		if not area.get_is_grabbing():
 			area.ans_hide()
 			destroy_answer.emit(area)
-			var temp = area.get_ans_name();
 			var tem2 = area.get_ans_text();
+			if tem2 == "3" or tem2 == "1":
+				$Correct.play()
+			elif tem2 == "6":
+				$Bass.play()
+			elif tem2 == "7":
+				pass
+			else :
+				$Wrong.play()
 			ans_array.append(tem2)
 			rendering()
 			false_ans(tem2)
